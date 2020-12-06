@@ -6,7 +6,7 @@
 /*   By: tmomose <tmomose@student.42tokyo.j>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/22 21:34:06 by tmomose           #+#    #+#             */
-/*   Updated: 2020/11/29 01:19:15 by tmomose          ###   ########.fr       */
+/*   Updated: 2020/12/05 12:32:34 by tmomose          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int		get_next_line(int fd, char **line)
 {
+	static char	*save;
 	char		*tmp;
 	char		buf[BUFFER_SIZE + 1];
 	int			ret;
